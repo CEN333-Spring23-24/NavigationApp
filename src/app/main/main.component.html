@@ -1,0 +1,21 @@
+<div class="content-wrapper">
+    <div class="content pure-g">
+        <h2 class="content-head is-center pure-u-1-1">
+            Cards 2
+        </h2>
+        <div *ngFor="let item of list" class="posts pure-u-1-1">
+            <section class="post">
+                <header class="post-header">
+                    <h2 class="post-title"> {{item.title}} </h2>
+                    <p class="post-meta"> by {{item.author}}</p>
+                </header>
+                <div class="post-description">
+                    <img class="pure-img" src="{{item.cover}}"/>
+                    <p>{{item.desc}}</p>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</div>
+
